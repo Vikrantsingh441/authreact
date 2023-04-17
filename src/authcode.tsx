@@ -61,7 +61,7 @@ function App() {
       scope:'openid offline_access BookStore address email profile roles phone'
     }
 
-    fetch('https://localhost:44310/connect/authorize', {
+    fetch('https://localhost:44369/connect/authorize', {
       method: 'POST',
       body: new URLSearchParams(params).toString(),
       headers: {
@@ -94,7 +94,7 @@ function App() {
           client_id: 'authreact'
       }
       
-      fetch('https://localhost:44310/connect/token', {
+      fetch('https://localhost:44369/connect/token', {
         method: 'POST',
         body: new URLSearchParams(params).toString(),
         headers: {
